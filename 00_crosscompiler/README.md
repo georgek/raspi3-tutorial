@@ -13,6 +13,18 @@ you have to solve that on your own. As I've said in the introduction I assume yo
 Each directory has two Makefiles, one for the GNU gcc, and one for LLVM clang. Pick the one you prefer. I could have used makefile
 variables and a common configuration, but it was important that each tutorial must be self-contained and dependency-free.
 
+Gentoo
+------
+
+On Gentoo the toolchain can be installed using crossdev with a single command:
+
+```
+# crossdev --target aarch64-elf -s1
+```
+
+This installs up to "stage 1", that is a bare C compiler. For more information
+see [Gentoo wiki](https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Creating_a_cross-compiler).
+
 LLVM Compiler and Linker
 ------------------------
 
