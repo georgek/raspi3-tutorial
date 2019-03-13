@@ -86,6 +86,9 @@ pxe-service=0,"Raspberry Pi Boot"
 
 Put stuff in `/srv/tftp`.
 
+More information here:
+https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/net_tutorial.md
+
 Emulation
 ---------
 
