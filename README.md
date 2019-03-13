@@ -70,6 +70,22 @@ GPIO pins 14/15, and run minicom on your desktop computer like
 minicom -b 115200 -D /dev/ttyUSB0
 ```
 
+Network booting
+---------------
+
+It's a lot easier to use network booting rather than copying files on to an SD
+card. I already use dnsmasq for DHCP. To enable PXE for network booting I
+simply added the following to the dnsmasq config:
+
+```
+enable-tftp
+tftp-root=/srv/tftp
+tftp-secure
+pxe-service=0,"Raspberry Pi Boot"
+```
+
+Put stuff in `/srv/tftp`.
+
 Emulation
 ---------
 
