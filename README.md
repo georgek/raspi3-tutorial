@@ -80,7 +80,6 @@ simply added the following to the dnsmasq config:
 ```
 enable-tftp
 tftp-root=/srv/tftp
-tftp-secure
 pxe-service=0,"Raspberry Pi Boot"
 ```
 
