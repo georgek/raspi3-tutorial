@@ -70,6 +70,12 @@ GPIO pins 14/15, and run minicom on your desktop computer like
 minicom -b 115200 -D /dev/ttyUSB0
 ```
 
+Or, with picocom:
+
+```sh
+picocom -b 115200 -r -l /dev/ttyUSB0
+```
+
 Network booting
 ---------------
 
