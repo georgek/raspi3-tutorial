@@ -41,6 +41,8 @@ volatile unsigned int  __attribute__((aligned(16))) mbox[36];
 
 /**
  * Make a mailbox call. Returns 0 on failure, non-zero on success
+ *
+ * ch = channel
  */
 int mbox_call(unsigned char ch)
 {
